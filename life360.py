@@ -89,8 +89,9 @@ class life360:
 
     def update_user(self, circle_id, member_id):
         authheader = "bearer " + self.access_token
-        request = self.make_request(url=f"https://api-cloudfront.life360.com/v3/circles/{circle_id}/members/{member_id}/request".format(
-            circle_id=circle_id, member_id=member_id), method="POST", params={"type": "location"}, authheader=authheader)
+        request = self.make_request(
+            url=f"https://api-cloudfront.life360.com/v3/circles/{circle_id}/members/{member_id}/request".format(
+                circle_id=circle_id, member_id=member_id), method="POST", params={"type": "location"}, authheader=authheader)
         requestID = request["requestId"]
         r = self.make_request(url=f"https://api-cloudfront.life360.com/v3/circles/members/request/{requestID}".format(
             requestID=requestID), method="GET", params={"type": "location"}, authheader=authheader)
