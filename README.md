@@ -2,6 +2,8 @@
 
 A simple Flask-based web interface to interact with Life360 data.
 
+### Credits to Harper Reed & Phil Bruckner (```https://github.com/pnbruckner/life360.git```) for creating the framework life360 client I added to for this project.
+
 ## Features
 
 - View location data from Life360
@@ -37,10 +39,7 @@ A simple Flask-based web interface to interact with Life360 data.
 
 4. **Configure environment**  
 
-    ```bash
-    cp .env.example .env
-    # Then edit .env with your API keys
-    ```
+    Edit the constants.py with your login information
 
 5. **Run the Flask app**:
 
