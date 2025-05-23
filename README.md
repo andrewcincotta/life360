@@ -35,8 +35,7 @@ A simple Flask-based web interface to interact with Life360 data.
     pip install -r requirements.txt
     ```
 
-4. **Configure environment (if needed)**  
-   If your app uses a `.env` file or config for API keys or credentials, document that here:
+4. **Configure environment**  
 
     ```bash
     cp .env.example .env
